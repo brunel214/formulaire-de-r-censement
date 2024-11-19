@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Recensement des Étudiants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Recensement des Étudiants</h1>
+        <form action="#" method="post">
+            <!-- Section Étudiant -->
+            <section>
+                <h2>Informations de l'Étudiant</h2>
+                <div class="form-group">
+                    <label for="etudiant-nom">Nom :</label>
+                    <input type="text" id="etudiant-nom" name="etudiant_nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="etudiant-prenom">Prénom :</label>
+                    <input type="text" id="etudiant-prenom" name="etudiant_prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="etudiant-naissance">Date de naissance :</label>
+                    <input type="date" id="etudiant-naissance" name="etudiant_naissance" required>
+                </div>
+                <div class="form-group">
+                    <label for="etudiant-lieu">Lieu de naissance :</label>
+                    <input type="text" id="etudiant-lieu" name="etudiant_lieu" required>
+                </div>
+                <div class="form-group">
+                    <label for="etudiant-adresse">Adresse :</label>
+                    <textarea id="etudiant-adresse" name="etudiant_adresse" rows="2" placeholder="Entrez votre adresse complète" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Boursier :</label>
+                    <input type="radio" id="boursier-oui" name="boursier" value="oui" required>
+                    <label for="boursier-oui">Oui</label>
+                    <input type="radio" id="boursier-non" name="boursier" value="non" required>
+                    <label for="boursier-non">Non</label>
+                </div>
+                <div class="form-group">
+                    <label for="etudiant-filiere">Filière :</label>
+                    <input type="text" id="etudiant-filiere" name="etudiant_filiere" required>
+                </div>
+                <div class="form-group">
+                    <label for="etudiant-classe">Classe :</label>
+                    <input type="text" id="etudiant-classe" name="etudiant_classe" required>
+                </div>
+                <div class="form-group">
+                    <label for="etudiant-mail">Email :</label>
+                    <input type="email" id="etudiant-mail" name="etudiant_mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="etudiant-telephone">Numéro de téléphone :</label>
+                    <input type="tel" id="etudiant-telephone" name="etudiant_telephone" required>
+                </div>
+            </section>
+
+            <!-- Section Tuteurs -->
+            <section>
+                <h2>Informations des Tuteurs</h2>
+                <div class="form-group">
+                    <label for="tuteur-nom">Nom :</label>
+                    <input type="text" id="tuteur-nom" name="tuteur_nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="tuteur-prenom">Prénoms :</label>
+                    <input type="text" id="tuteur-prenom" name="tuteur_prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="tuteur-metier">Métier :</label>
+                    <input type="text" id="tuteur-metier" name="tuteur_metier" required>
+                </div>
+                <div class="form-group">
+                    <label for="tuteur-telephone">Numéro de téléphone :</label>
+                    <input type="tel" id="tuteur-telephone" name="tuteur_telephone" required>
+                </div>
+                <div class="form-group">
+                    <label for="tuteur-mail">Email :</label>
+                    <input type="email" id="tuteur-mail" name="tuteur_mail" required>
+                </div>
+            </section>
+
+            <!-- Section Informations Supplémentaires -->
+            <section>
+                <h2>Informations Supplémentaires</h2>
+                <div class="form-group">
+                    <label>Avez-vous des antécédents médicaux importants que nous devrions connaître ?</label>
+                    <input type="radio" id="antecedents-oui" name="antecedents" value="oui" required>
+                    <label for="antecedents-oui">Oui</label>
+                    <input type="radio" id="antecedents-non" name="antecedents" value="non" required>
+                    <label for="antecedents-non">Non</label>
+                    <textarea id="details-antecedents" name="details_antecedents" rows="3" placeholder="Si oui, lesquels ?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Est-ce que vous vivez seul ?</label>
+                    <input type="radio" id="seul-oui" name="seul" value="oui" required>
+                    <label for="seul-oui">Oui</label>
+                    <input type="radio" id="seul-non" name="seul" value="non" required>
+                    <label for="seul-non">Non</label>
+                    <textarea id="raison-seul" name="raison_seul" rows="3" placeholder="Si oui, pour quelles raisons ?"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Quelles activités ou événements souhaiteriez-vous que le Bureau des Étudiants organise pour favoriser le bien-être des étudiants ?</label>
+                    <textarea id="suggestions" name="suggestions" rows="4" placeholder="Partagez vos idées ici..."></textarea>
+                </div>
+            </section>
+
+            <!-- Bouton Soumettre -->
+            <div class="form-group">
+                <button type="submit">Soumettre</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
